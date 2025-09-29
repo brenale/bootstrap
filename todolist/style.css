@@ -1,0 +1,73 @@
+button {
+    background-color: black;
+    color: blanchedalmond;
+    border: none;
+    height: 31px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(37, 37, 37); 
+
+}
+
+h1 {
+
+    font-size: 30px;
+    text-align:center;
+}
+
+body {
+    background-color: #D3D3D3;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align:center;
+}
+
+img {
+    text-align:center;
+    height: 70px;
+    width: 70px;
+    margin-top: 15px;
+}
+
+.div {
+  width: 300px;
+  margin: 0 auto; /* centraliza horizontalmente */
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    background-color: white;
+    border: 10px;
+    outline: none;
+    color: 	#696969;
+  
+    border-radius: 5px;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    align-items:first baseline
+
+}
+li {
+    background-color: aqua;
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    height:10px;
+    width: 210px;
+    color:#303030;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span {
+    cursor:pointer;
+}

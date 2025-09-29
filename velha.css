@@ -1,0 +1,106 @@
+
+background {
+  background-color: green;
+
+}
+
+h1 {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+h2 {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 30px;
+  height: auto;
+  width: auto;
+}
+
+/*Tabuleiro*/
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 0 auto 20px;
+  
+  background-color: black;
+}
+
+input[type="button"] {
+  background-color: Goldenrod; /* Cor de fundo */
+  color: white;              /* Cor do texto */
+}
+
+
+
+
+
+
+.game {
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+ 
+}
+
+.game input[name="opt"] {
+  width: 100px;
+  height: 100px;
+  border: 0;
+}
+
+
+.wins {
+  background: green;
+  color: white;
+}
+
+.btn {
+  margin-top: 16px;
+  padding: 4px;
+  color:blue;
+  background-color: Wheat;
+  transition: background-color 0.5s ease; /* Transição suave */
+  border-radius: 5px; /* Borda arredondada */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.btn:hover {
+  background-color: #29c5f5; /* Cor mais escura ao passar o mouse */
+  cursor: pointer; /* Muda o cursor para um ponteiro */
+}
+
+.pontos {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+#message {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222; /* cor de fundo */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 100;
+}
+ 
