@@ -1,43 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #e3f2fd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: #e3f2fd;
-  }
+h1 {
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
 
-  h1 { color: #0d47a1; }
+.controle {
+  display: inline-flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
 
-  #mapa {
-    display: inline-grid;
-    gap: 5px;
-    margin-top: 20px;
-  }
+select,
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
 
-  .cell {
-    width: 40px;
-    height: 40px;
-    background-color: #90caf9;
-    border: 1px solid #0d47a1;
-    cursor: pointer;
-  }
-  img {
-    width: 40px;
-    height: 40px;
-  }
-  .acerto {
-    background-color: #e3f2fd; 
-    border-color: #e3f2fd;
-  }    
-  .errou { 
-    background-color: #e3f2fd; 
-    border-color: #e3f2fd;
-  }   /* : errou */
+#message,
+#message2 {
+  order: 1;
+  margin: 10px 0;
+}
+
+#mapa {
+  order: 2;
+  display: inline-grid;
+  gap: 5px;
+  margin-top: 40px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: #90caf9;
+  border: 1px solid #0d47a1;
+  cursor: pointer;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+.acerto {
+  background-color: #e3f2fd;
+  border-color: #050505;
+}
+
+.errou {
+  background-color: #e3f2fd;
+  border-color: #070707;
+}
+
+/* Bordas coloridas por tipo de navio */
+.borda-fragata {
+  border: 2px solid #2196f3; /* Azul */
+  border-radius: 4px;
+}
+
+.borda-destroyer {
+  border: 2px solid #4caf50; /* Verde */
+  border-radius: 4px;
+}
+
+.borda-submarino {
+  border: 2px solid #f44336; /* Vermelho */
+  border-radius: 4px;
+}
+
+.borda-porta-avioes {
+  border: 2px solid #ffeb3b; /* Amarelo */
+  border-radius: 4px;
+}
+
+.borda-top { border-top: 2px solid #4caf50; }
+.borda-bottom { border-bottom: 2px solid #4caf50; }
+.borda-left { border-left: 2px solid #4caf50; }
+.borda-right { border-right: 2px solid #4caf50; }
 
 
-
-  
-
-
-
-
-    

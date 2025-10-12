@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css"> 
-<title>Batalha Naval</title>
-
+  <meta charset="UTF-8">
+  <title>Batalha Naval</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>Batalha Naval</h1>
 
-<h1>Batalha Naval</h1>
+  <div class="controle">
+    <select id="tamanho">
+      <option value="4">Pequeno</option>
+      <option value="6">Médio</option>
+      <option value="8">Grande</option>
+    </select>
+    <button onclick="iniciar()">Iniciar Jogo</button>
+  </div>
 
-<label for="tamanho">Escolha o mapa:</label>
-<select id="tamanho">
-  <option value="4">Pequeno</option>
-  <option value="6">Medio</option>
-  <option value="8">Grande</option>
-</select>
-<button onclick="iniciar()">Iniciar Jogo</button>
+  <p id="message"></p>
+  <p id="message2"></p>
 
-<p id="message"></p>
-<p id="message2"></p>
+  <div id="mapa" class="grid"></div>
 
-<div id="mapa"></div>
-
-<script src="scripts.js"></script>
+  <script type="module" src="scripts.js"></script>
 </body>
 </html>
